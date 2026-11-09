@@ -16,7 +16,7 @@ namespace Aigifmaker;
  */
 final class Client
 {
-    public const VERSION = '0.1.0';
+    public const VERSION = '0.1.1';
     public const BASE_URL = 'https://aigifmaker.ai';
     public const KEYS_URL = 'https://aigifmaker.ai/settings/apikeys';
     public const PRICING_URL = 'https://aigifmaker.ai/pricing';
@@ -28,13 +28,13 @@ final class Client
 
     /**
      * @param string|null $apiKey  defaults to the AIGIFMAKER_API_KEY environment variable
-     * @param float $timeout  seconds generate() waits for a GIF (default 5 minutes)
+     * @param float $timeout  seconds generate() waits for a GIF (default 15 minutes)
      * @param float $pollEvery  seconds between status checks
      * @param callable|null $transport  fn(string $url, array|object $body, array $headers): array{int, array}, for tests
      */
     public function __construct(
         ?string $apiKey = null,
-        private float $timeout = 300.0,
+        private float $timeout = 900.0,
         private float $pollEvery = 3.0,
         string $baseUrl = self::BASE_URL,
         ?callable $transport = null,

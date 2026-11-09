@@ -36,7 +36,7 @@ echo $gif->credits();   // remaining credits, free to call
 ## Options
 
 ```php
-$gif = new Aigifmaker\Client('sk-...', timeout: 300);   // timeout in seconds, 5 minutes by default
+$gif = new Aigifmaker\Client('sk-...', timeout: 900);   // timeout in seconds, 15 minutes by default
 ```
 
 ## Submit now, collect later
