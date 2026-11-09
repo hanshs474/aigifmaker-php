@@ -1,0 +1,12 @@
+{
+    "name": "hanshs474/aigifmaker",
+    "description": "Official SDK for AI GIF Maker (aigifmaker.ai): turn text into animated GIFs.",
+    "type": "library",
+    "keywords": ["gif", "gif-maker", "ai-gif", "animated-gif", "text-to-gif", "gif-generator", "aigifmaker"],
+    "homepage": "https://aigifmaker.ai/?utm_source=packagist&utm_medium=package",
+    "license": "MIT",
+    "authors": [{"name": "hanshs474", "homepage": "https://aigifmaker.ai/?utm_source=packagist&utm_medium=package"}],
+    "support": {"email": "support@aigifmaker.ai", "issues": "https://github.com/hanshs474/aigifmaker-php/issues", "source": "https://github.com/hanshs474/aigifmaker-php"},
+    "require": {"php": ">=8.1", "ext-curl": "*", "ext-json": "*"},
+    "autoload": {"psr-4": {"Aigifmaker\\": "src/"}}
+}
